@@ -1,0 +1,150 @@
+@import "dav-reset.css";
+
+/* * _STYLE - LAYOUT_ */
+/* ! _Header_ */
+.container-header {
+  top: 0;
+  left: 0;
+  border-bottom: 0.1rem solid var(--cl-grey);
+  padding: 0.4rem 0;
+  height: 5rem;
+  position: sticky;
+  z-index: 999;
+  background-color: #101218;
+  background-color: var(--cl-white);
+  .box-header {
+    margin: auto;
+  }
+}
+
+/* ? _Header - Logo_ */
+.header-logo {
+  & img {
+    max-width: calc(var(--step-3) * 4.5);
+  }
+}
+
+/* ? _Header - Menu_ */
+.header-menu {
+  top: 5rem;
+  bottom: 0;
+  right: 0;
+  min-height: 80vh;
+  width: 70%;
+  position: fixed;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+  background-color: var(--cl-grey-dark);
+  & a {
+    color: var(--cl-white);
+    &:hover {
+      border-radius: 0.2rem;
+      padding: 0.3rem;
+      width: 5rem;
+      text-align: center;
+      color: var(--cl-white);
+      background-color: var(--cl-grey);
+    }
+  }
+}
+.menu-open {
+  clip-path: circle(150% at top right);
+}
+
+/* ? _Boton - Toggle_ */
+.menu-toggle {
+  padding: 0.5rem 0.3rem;
+  width: auto;
+  cursor: pointer;
+}
+.toggle-open {
+  transform: rotate(45deg);
+  .toggle-icon {
+    transform: rotate(45deg);
+    &::before {
+      opacity: 0;
+    }
+    &::after {
+      transform: translateY(-3px) rotate(-90deg);
+    }
+  }
+}
+.toggle-icon {
+  &,
+  &::after,
+  &::before {
+    height: 0.2rem;
+    width: 1.5rem;
+    content: " ";
+    transition: all ease-in-out 500ms;
+    background-color: var(--cl-grey);
+  }
+  &::after {
+    transform: translateY(3px);
+  }
+  &::before {
+    transform: translateY(-6px);
+  }
+}
+
+/* ! _Footer_ */
+.container-footer {
+  min-height: auto;
+  color: var(--cl-white);
+  background-image: var(--bg-radial);
+  .box-footer {
+    margin: auto;
+  }
+}
+.footer-copy {
+  margin: auto;
+  width: auto;
+}
+
+/* ? _Footer - Firma_ */
+.footer-firma {
+  width: auto;
+  & img {
+    max-width: calc(var(--step--2) * 2);
+  }
+  & a {
+    margin-left: 0.5rem;
+    & img {
+      max-width: calc(var(--step--2) * 4);
+    }
+  }
+}
+
+/* ? _Footer - Social_ */
+.footer-social {
+  margin: auto;
+  width: 50%;
+}
+
+/* *** ---- Sinze ==> L / From ==> 62em ---- */
+@media (width >= 62em) {
+  /* * _STYLE - LAYOUT_ */
+  /* ! _Header_ */
+  .container-header {
+    height: auto;
+  }
+  /* ? _Header - Menu_ */
+  .header-menu {
+    top: 0;
+    margin-right: 0;
+    padding: 0;
+    min-height: auto;
+    width: 50%;
+    position: relative;
+    clip-path: initial;
+    background-color: transparent;
+    & a {
+      color: var(--cl-grey-dark);
+    }
+  }
+
+  /* ? _Boton - Toggle_ */
+  .menu-toggle {
+    display: none;
+  }
+}

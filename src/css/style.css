@@ -1,0 +1,255 @@
+@import "dav/dav-reset.css";
+@import "dav/dav-layout.css";
+@import "dav/dav-grid.css";
+@import "app/app.css";
+
+/* * _STYLE - GENERAL_ */
+body {
+  color: var(--cl-grey-dark);
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+}
+
+.dav-efect {
+  transition: 0.5s ease-in-out;
+}
+
+.footer-social {
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  & img {
+    max-width: calc(var(--step--2) * 2);
+  }
+}
+
+.title-h2 {
+  font-size: var(--step-4);
+  & i {
+    color: var(--cl-grey);
+  }
+}
+
+.title-h5 {
+  font-style: italic;
+  color: var(--cl-grey);
+}
+
+/* * _STYLE - LAYOUT_ */
+/* ! _Header_ */
+.container-header {
+  padding: 0;
+}
+/* ! _Footer_ */
+.box-footer {
+  & img {
+    max-width: calc(var(--step--2) * 1.5);
+  }
+  & p {
+    margin: 0 0.2rem 0 0.2rem;
+    font-weight: bold;
+  }
+  .dav-kode {
+    max-width: calc(var(--step-3) * 1.8);
+  }
+}
+
+/* * _STYLE - INDEX_ */
+/* ! _Container - Hero_ */
+.container-hero {
+  background-image: url("../../assets/img/banner/city.svg");
+  background-attachment: fixed;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* ! _Container - Info -Us_ */
+.container-info-us {
+  height: 20rem;
+  .box-info-us {
+    background-image: url("../../assets/img/banner/us.svg");
+    background-size: 15vh;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    & p {
+      width: 100%;
+    }
+  }
+  .info-social-us {
+    width: 30%;
+  }
+}
+
+/* ! _Container - Because_ */
+/* ? _Because-Info_ */
+.because-p {
+  width: 90%;
+}
+.item-company {
+  margin-top: 1rem;
+  width: 90%;
+}
+.link-company {
+  & img {
+    max-width: calc(var(--step-0) * 3);
+  }
+  .ingene {
+    max-width: calc(var(--step-4) * 3);
+  }
+  .syscom,
+  .gvs,
+  .penaranda {
+    max-width: calc(var(--step-2) * 3);
+  }
+}
+
+/* ? _Because-Description_ */
+.description-content {
+  margin-left: 0.5rem;
+  width: 90%;
+}
+
+/* * _STYLE - US_ */
+/* ! _Banner - Us_ */
+.banner-us {
+  height: 15rem;
+  background-image: url("../../assets/img/banner/bg_Us.svg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  .title-us {
+    font-size: calc(var(--step-2) * 2);
+  }
+}
+/* ! _Container - Team_ */
+.container-team {
+  background-image: url("../../assets/img/banner/team.svg");
+  background-size: initial;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.card-team {
+  padding: 1rem;
+  background-color: var(--cl-white);
+}
+.check {
+  margin-top: 0.2rem;
+  width: 100%;
+  & p {
+    width: 90%;
+    margin-left: 0.5rem;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
+.team-content {
+  width: 100%;
+}
+.team-content-list {
+  margin-top: 1rem;
+}
+.team-photo {
+  width: 25%;
+}
+/* *** ---- Sinze ==> L / From ==> 62em ---- */
+@media (width >= 30em) {
+  /* * _STYLE - LAYOUT_ */
+  /* ? _Header - Menu_ */
+  .header-menu {
+    & a:hover {
+      width: 6rem;
+    }
+  }
+}
+/* ** ---- Sinze ==> M / From ==> 48em ---- */
+@media (width >= 48em) {
+  /* * _STYLE - LAYOUT_ */
+  /* ? _Header - Menu_ */
+  .header-menu {
+    & a:hover {
+      width: 6.5rem;
+    }
+  }
+
+  /* * _STYLE - INDEX_ */
+  /* ! _Container - Info -Us_ */
+  .container-info-us {
+    .box-info-us {
+      background-size: 20vh;
+      & p {
+        width: 70%;
+      }
+    }
+  }
+  .container-because {
+    margin-top: 8rem;
+  }
+
+  /* * _STYLE - US_ */
+  /* ! _Container - Team_ */
+  .container-team {
+    background-position: right top;
+  }
+
+  /* ! _Container - Team_ */
+  .team-img {
+    width: 26%;
+  }
+  .team-content {
+    padding-left: 1rem;
+    width: 74%;
+  }
+}
+
+/* *** ---- Sinze ==> L / From ==> 62em ---- */
+@media (width >= 62em) {
+  /* * _STYLE - INDEX_ */
+  /* ! _Container - Info -Us_ */
+  .container-info-us {
+    height: 22rem;
+    .box-info-us {
+      background-size: 30vh;
+      & p {
+        width: 52%;
+      }
+    }
+  }
+}
+
+/* **** ---- Sinze ==> G / From ==> 75em ---- */
+@media (width >= 75em) {
+  /* * _STYLE - INDEX_ */
+  /* ! _Container - Info -Us_ */
+  .container-info-us {
+    .box-info-us {
+      background-size: 36vh;
+    }
+  }
+}
+
+/* **** ---- Sinze ==> XG / From ==> 80em ---- */
+@media (width >= 80em) {
+  /* * _STYLE - LAYOUT_ */
+  /* ? _Header - Menu_ */
+  .header-menu {
+    & a:hover {
+      width: 7rem;
+    }
+  }
+
+  /* * _STYLE - INDEX_ */
+  /* ! _Container - Info -Us_ */
+  .container-info-us {
+    height: 30rem;
+    .box-info-us {
+      & p {
+        width: 48%;
+      }
+    }
+  }
+}

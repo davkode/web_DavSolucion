@@ -108,34 +108,28 @@ ul {
 }
 
 /* ? _Because-Description_ */
+.description-item {
+  width: 100%;
+}
 .description-content {
   margin-left: 0.5rem;
   width: 90%;
 }
 
 /* * _STYLE - US_ */
+.bg-us {
+  background-image: url("../../assets/img/banner/bg-us.svg");
+  background-size: 100vw 100vh;
+  background-position: center;
+}
 /* ! _Banner - Us_ */
 .banner-us {
   height: 15rem;
-  background-image: url("../../assets/img/banner/bg_Us.svg");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
   .title-us {
     font-size: calc(var(--step-2) * 2);
   }
 }
 /* ! _Container - Team_ */
-.container-team {
-  background-image: url("../../assets/img/banner/team.svg");
-  background-size: initial;
-  background-position: left top;
-  background-repeat: no-repeat;
-}
-.card-team {
-  padding: 1rem;
-  background-color: var(--cl-white);
-}
 .check {
   margin-top: 0.2rem;
   width: 100%;

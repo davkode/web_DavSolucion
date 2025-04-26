@@ -31,10 +31,11 @@
 /* ? _ICON_ */
 .card-item {
   padding: 0.8rem;
+  background-color: var(--cl-white);
 }
 .card-icon {
   & img {
-    max-width: calc(var(--step--1) * 2);
+    max-width: calc(var(--step--1) * 1.4);
   }
   & p {
     margin-top: 0.5rem;

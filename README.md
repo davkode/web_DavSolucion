@@ -29,5 +29,11 @@ Ejecución y mantenimiento de diversas soluciones tecnológicas en los ámbitos 
 
 ---
 
+<div align="center">
+<p>Se utiliza las siguientes librerias para la animación: </p>
+ <a href="https://animate.style" target="_blank" class="wow  inim">animate.css</a>
+ <a href="https://wowjs.uk" target="_blank" class="wow  inim">wow.js</a>
+</div>
+
 - 👀 Visita [davsolucion.co](https://davsolucion.co)
 - 📫 How to reach me **davsolucion@gmail.com**

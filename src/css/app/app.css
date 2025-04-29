@@ -10,6 +10,8 @@
   .hero-h1 {
     width: 100%;
     font-size: var(--step-4);
+    animation: zoomIn;
+    animation-duration: 1.5s;
     & i {
       color: var(--cl-grey);
     }
@@ -17,12 +19,16 @@
   .hero-p {
     width: 100%;
     font-weight: bold;
+    animation: slideInLeft;
+    animation-duration: 2s;
   }
 }
 .hero-button {
   width: 60%;
 }
 .hero-img {
+  animation: zoomIn;
+  animation-duration: 2.5s;
   & img {
     max-width: calc(var(--step-6) * 6);
   }

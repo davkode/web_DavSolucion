@@ -2,6 +2,7 @@
 @import "dav/dav-layout.css";
 @import "dav/dav-grid.css";
 @import "app/app.css";
+@import "app/animate.css";
 
 /* * _STYLE - GENERAL_ */
 body {
@@ -35,6 +36,8 @@ ul {
 
 .title-h2 {
   font-size: var(--step-4);
+  animation: zoomIn;
+  animation-duration: 1.5s;
   & i {
     color: var(--cl-grey);
   }
@@ -44,6 +47,9 @@ ul {
   font-style: italic;
   color: var(--cl-grey);
 }
+
+/* * _STYLE - APP_ */
+/* ! _Header_ */
 
 /* * _STYLE - LAYOUT_ */
 /* ! _Header_ */
@@ -83,6 +89,8 @@ ul {
     background-repeat: no-repeat;
     & p {
       width: 100%;
+      animation: slideInRight;
+      animation-duration: 2s;
     }
   }
   .info-social-us {
@@ -130,6 +138,20 @@ ul {
     font-size: calc(var(--step-2) * 2);
   }
 }
+.box-us {
+  & li {
+    animation: backInDown;
+  }
+  .card-item-m {
+    animation-duration: 1.5s;
+  }
+  .card-item-v {
+    animation-duration: 2s;
+  }
+  .card-item-p {
+    animation-duration: 2.5s;
+  }
+}
 /* ! _Container - Team_ */
 .check {
   margin-top: 0.2rem;
@@ -142,6 +164,23 @@ ul {
     font-weight: bold;
   }
 }
+.group-team {
+  & aside {
+    animation: backInUp;
+  }
+  .team-one {
+    animation-duration: 1.5s;
+  }
+  .team-two {
+    animation-duration: 2s;
+  }
+  .team-tree {
+    animation-duration: 2.5s;
+  }
+  .team-four {
+    animation-duration: 3s;
+  }
+}
 .team-content {
   width: 100%;
 }
@@ -150,6 +189,21 @@ ul {
 }
 .team-photo {
   width: 25%;
+}
+/* ! _Container - Certificates_ */
+.certificate {
+  & a {
+    animation: bounceInRight;
+  }
+  .dahua {
+    animation-duration: 1.5s;
+  }
+  .ibernex {
+    animation-duration: 2s;
+  }
+  .inim {
+    animation-duration: 2.5s;
+  }
 }
 
 /* * _STYLE - Service_ */

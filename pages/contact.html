@@ -39,10 +39,65 @@
       </article>
     </section>
     <section class="dav-container  dav-full">
-      <article class="dav-box  dav-min">
-        <form action="" class="formulario" id="formulario">
-
+      <article class="dav-box  dav-min  dav-grid  col-1  l-col-2">
+        <form action="../src/db/send.php" method="POST" class="dav-grid  col-1  border-neo  form" id="form">
+          <!--Nombre-->
+          <div class="form-group" id="group-name">
+            <label for="name" class="form-label">Nombre</label>
+            <div class="form-group-input">
+              <input type="text" class="form-input" name="name" id="name" placeholder="Nombre">
+              <i class="form-input-state"> </i>
+            </div>
+            <p class="form-input-error">Digite su nombre</p>
+          </div>
+          <!--Email-->
+          <div class="form-group" id="group-email">
+            <label for="email" class="form-label">Correo</label>
+            <div class="form-group-input">
+              <input type="email" class="form-input" name="email" id="email" placeholder="info@davsolucion.co">
+              <i class="form-input-state"> </i>
+            </div>
+            <p class="form-input-error">Este no es un correo valido</p>
+          </div>
+          <!--Mensaje-->
+          <div class="form-group" id="group-message">
+            <label for="message" class="form-label">Mensaje</label>
+            <div class="form-group-input">
+              <input type="text" class="form-input" name="message" id="message" placeholder="Su mensaje">
+              <i class="form-input-state"> </i>
+            </div>
+            <p class="form-input-error">Este espacio no deber estar vacio</p>
+          </div>
+          <!--Alerta-->
+          <div class="form-alert" id="form-alert">
+            <p>Los campos son requeridos<i>&#10071</i></p>
+          </div>
+          <!--Boton-->
+          <div class="dav-flex  column  ai-center  form-group  form-group-bnt">
+            <button type="submit" value="send" class="dav-button  forn-btn" id="forn-btn">Enviar</button>
+            <p class="form-success" id="form-success">Gracia por su mensaje<i>&#128077</i></p>
+          </div>
         </form>
+        <div class="border-neo  dav-flex  column  ai-center  jc-evenly  l-jc-start  social-contact">
+          <h4>Visita nuestras redes sociales</h4>
+          <nav class="dav-flex  l-column  ai-center  l-ai-start  jc-evenly  social-contact-nav">
+            <a href="https://www.instagram.com/davsolucion?igsh=dWdwbDFyZHgwOWl2"
+              class="dav-flex  column  l-row  ai-center  jc-center  dav-link  social-contact-icon" target="_blank">
+              <img src="../assets/img/icon/instagram.svg" alt="">
+              <p>@davsolucion</p>
+            </a>
+            <a href="https://www.linkedin.com/company/davsolucion"
+              class="dav-flex  column  l-row  ai-center  jc-center  dav-link  social-contact-icon" target="_blank">
+              <img src="../assets/img/icon/linkedin.svg" alt="">
+              <p>davsolucion</p>
+            </a>
+            <a href="https://wa.me/message/YM4G5ONXYYUCN1"
+              class="dav-flex  column  l-row  ai-center  jc-center  dav-link  social-contact-icon" target="_blank">
+              <img src="../assets/img/icon/whatsapp.svg" alt="">
+              <p>Escribenos</p>
+            </a>
+          </nav>
+        </div>
       </article>
     </section>
   </main>

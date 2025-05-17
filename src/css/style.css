@@ -233,7 +233,32 @@ ul {
   margin: 3rem auto;
 }
 
-/* *** ---- Sinze ==> L / From ==> 62em ---- */
+/* * _STYLE - Contact_ */
+.social-contact {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--cl-white);
+  & h4 {
+    font-style: italic;
+    color: var(--cl-grey-dark);
+  }
+  .social-contact-nav {
+    margin-top: 2rem;
+    width: 100%;
+    .social-contact-icon {
+      & img {
+        max-width: calc(var(--step--2) * 2.5);
+      }
+      & p {
+        font-size: var(--step-2);
+        font-weight: bold;
+        color: var(--cl-grey);
+      }
+    }
+  }
+}
+
+/* *** ---- Sinze ==> L / From ==> 30em ---- */
 @media (width >= 30em) {
   /* * _STYLE - LAYOUT_ */
   /* ? _Header - Menu_ */
@@ -293,6 +318,18 @@ ul {
       background-size: 30vh;
       & p {
         width: 52%;
+      }
+    }
+  }
+
+  /* * _STYLE - Contact_ */
+  /* ! _Social_ */
+  .social-contact {
+    margin-top: 0;
+    .social-contact-nav {
+      height: 70%;
+      & p {
+        margin-left: 0.5rem;
       }
     }
   }
